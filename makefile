@@ -1,11 +1,11 @@
-#Контроллер, установленный на плате. Может быть другим, например atmega328
+#on board device atmega328
 DEVICE = atmega328p
 
-#Тактовая частота 16 МГц
-CLOCK = 16000000
+#20MHz
+CLOCK = 20000000
 
-#Команда запуска avrdude. Ее нужно скопировать из Arduino IDE.
-AVRDUDE = C:\arduino-nightly\hardware\tools\avr/bin/avrdude -CC:\arduino-nightly\hardware\tools\avr/etc/avrdude.conf -v -patmega328p -carduino -PCOM4 -b115200 -D
+#run avrdude. config from Arduino IDE.
+AVRDUDE = C:\arduino-nightly\hardware\tools\avr/bin/avrdude -CC:\arduino-nightly\hardware\tools\avr/etc/avrdude.conf -v -patmega328p -carduino -PCOM4 -b57600 -D
 
 OBJECTS = main.o
 
